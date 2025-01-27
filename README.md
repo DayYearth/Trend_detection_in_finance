@@ -1,0 +1,1 @@
+# Trend_detection_in_finance
