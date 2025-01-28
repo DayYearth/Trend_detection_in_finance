@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Trend Classification</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Financial Trend Classification</h1>
+    <form id="uploadForm">
+      <label for="csvFile">Upload CSV File:</label>
+      <input type="file" id="csvFile" name="file" accept=".csv" required>
+
+      <label for="modelSelect">Choose Model:</label>
+      <select id="modelSelect" name="model">
+        <option value="random_forest">Random Forest</option>
+        <option value="svm">SVM</option>
+      </select>
+
+      <button type="submit">Predict Trends</button>
+    </form>
+
+    <div id="result">
+      <h2>Predictions:</h2>
+      <pre id="output"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
